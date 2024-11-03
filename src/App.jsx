@@ -8,7 +8,8 @@ import { useState } from 'react';
 function App() {
  const[bookmarks,setBookmarks]=useState([]);
  const handleAddToBookmark=(blog)=>{
-  console.log('bookmark this');
+  const newBookMarks=[...bookmarks,blog]
+  setBookmarks(newBookMarks);
  }
 
   return (
@@ -18,7 +19,9 @@ function App() {
      <Blogs 
       handleAddToBookmark={handleAddToBookmark}
       ></Blogs>
-     <Bookmarks ></Bookmarks>
+     <Bookmarks
+        bookmarks={bookmarks}
+      ></Bookmarks>
      </div>
     </div>
   )

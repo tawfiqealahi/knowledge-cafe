@@ -4,7 +4,7 @@ import profile from '../../assets/images/profile.png';
 
 const Header = () => {
     return (
-        <header className='flex justify-between mt-4'>
+        <header className=' flex justify-between mt-4'>
             <div>
             <h1 className="text-4xl text- font-bold ">
       Knowledge-cafe
