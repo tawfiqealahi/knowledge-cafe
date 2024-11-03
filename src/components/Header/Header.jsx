@@ -1,18 +1,19 @@
 import  './Header.css';
+import profile from '../../assets/images/profile.png';
 
 
 const Header = () => {
     return (
-        <div>
+        <header className='flex justify-between mt-4'>
             <div>
             <h1 className="text-4xl text- font-bold ">
       Knowledge-cafe
     </h1>
             </div>
             <div>
-                <img src="" alt="" srcset="" />
+                <img src={profile} alt="profile"  />
             </div>
-        </div>
+        </header>
     );
 };
 
