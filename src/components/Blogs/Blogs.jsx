@@ -4,7 +4,7 @@ import './Blogs.css';
 import { useEffect } from 'react';
 import Blog from '../Blog/Blog';
 
-const Blogs = ({handleAddToBookmark}) => {
+const Blogs = ({handleAddToBookmark,  handleReadingTime}) => {
     const[blogs,setBlogs]=useState([]);
 
     useEffect(()=>{
@@ -20,6 +20,7 @@ const Blogs = ({handleAddToBookmark}) => {
           {
             blogs.map(blog=> <Blog
             handleAddToBookmark={handleAddToBookmark}
+            handleReadingTime={handleReadingTime}
             blog={blog}
             key={blog.id}
             ></Blog>)
@@ -28,7 +29,8 @@ const Blogs = ({handleAddToBookmark}) => {
     );
 };
 Blogs.propTypes={
-    handleAddToBookmark:PropTypes.func.isRequired
+    handleAddToBookmark:PropTypes.func.isRequired,
+    handleReadingTime:PropTypes.func.isRequired
 }
 
 export default Blogs;
