@@ -1,11 +1,17 @@
 import  './Header.css';
 
+
 const Header = () => {
     return (
         <div>
-             <h1 className="text-3xl color-blue font-semibold underline">
-      Hello world!
-    </h1>h
+            <div>
+            <h1 className="text-4xl text- font-bold ">
+      Knowledge-cafe
+    </h1>
+            </div>
+            <div>
+                <img src="" alt="" srcset="" />
+            </div>
         </div>
     );
 };
